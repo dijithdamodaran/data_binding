@@ -7,4 +7,14 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'two-way-binding-demo';
+  userName: string="dijith ";
+  userEmail:string="dij@gmail.com";
+  userAge:number=30;
+  userCompany:string="it-vedant";
+  
+  data : string = ""
+  onsave(){
+    this.data = this.userName + ":" + this.userAge + ":" + this.userCompany + ":" + this.userEmail;
+  }
 }
+ 
